@@ -7,8 +7,8 @@
     <ProjectGuid>{0FECD56A-0246-4FB6-9229-CA19D0B94AE4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Apsogui.Dominio</RootNamespace>
-    <AssemblyName>Apsogui.Dominio</AssemblyName>
+    <RootNamespace>Dominio.Apsogui</RootNamespace>
+    <AssemblyName>Domino.Apsogui</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,10 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumno.cs" />
-    <Compile Include="Cinturon.cs" />
-    <Compile Include="CinturonAlumno.cs" />
-    <Compile Include="Licencia.cs" />
+    <Compile Include="Servicios\MovimientoAlumno.cs" />
+    <Compile Include="Servicios\Alumno.cs" />
+    <Compile Include="Servicios\Cinturon.cs" />
+    <Compile Include="Servicios\CinturonAlumno.cs" />
+    <Compile Include="Servicios\Licencia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

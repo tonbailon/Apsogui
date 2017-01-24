@@ -5,7 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4- Dominio", "4- Dominio", "{7256D998-B6B4-4FA7-B061-8280B16E95F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apsogui.Dominio", "Apsogui.Dominio\Apsogui.Dominio.csproj", "{0FECD56A-0246-4FB6-9229-CA19D0B94AE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio.Apsogui", "Apsogui.Dominio\Dominio.Apsogui.csproj", "{0FECD56A-0246-4FB6-9229-CA19D0B94AE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3- Aplicación", "3- Aplicación", "{74985580-13BC-4EA0-9A98-D3B0713311D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apsogui", "Apsogui", "{B72564E9-A2ED-46D7-BA17-B980A2E41493}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +26,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0FECD56A-0246-4FB6-9229-CA19D0B94AE4} = {7256D998-B6B4-4FA7-B061-8280B16E95F4}
+		{0FECD56A-0246-4FB6-9229-CA19D0B94AE4} = {B72564E9-A2ED-46D7-BA17-B980A2E41493}
+		{B72564E9-A2ED-46D7-BA17-B980A2E41493} = {7256D998-B6B4-4FA7-B061-8280B16E95F4}
 	EndGlobalSection
 EndGlobal

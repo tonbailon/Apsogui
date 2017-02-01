@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Apsogui
+namespace Dominio.Apsogui.GestionAlumnos
 {
     public class Alumno
     {
 
-        private string m_IdAlumno="";
-        private string m_Nombre = "";
-        private string m_Apellido1="";
-        private string m_Apellido2 ="";
-        private string m_NumeroIdentificacion = "";
-        private string m_TipoIdentificacion = "";
-        private DateTime? m_FechaNacimiento = null;
+        //private string m_IdAlumno="";
+        //private string m_Nombre = "";
+        //private string m_Apellido1="";
+        //private string m_Apellido2 ="";
+        //private string m_NumeroIdentificacion = "";
+        //private string m_TipoIdentificacion = "";
+        //private DateTime? m_FechaNacimiento = null;
 
         public Alumno() {
 
@@ -41,11 +41,6 @@ namespace Dominio.Apsogui
         {
             throw new NotImplementedException("Dominio.Appsogui.ReactivarAlumno");
         }
-
-        void AddCinturon(Cinturon cinturon)
-        {
-            if (cinturon == null)   { throw new ArgumentException("Cinturon"); }
-
-        }
+       
     }
 }

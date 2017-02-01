@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Apsogui
-{
+namespace Dominio.Apsogui.GestionAlumnos { 
     class MovimientoAlumno
     {
         private string m_IdAlumno="";        

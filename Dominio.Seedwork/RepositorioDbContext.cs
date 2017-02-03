@@ -8,15 +8,15 @@ using System.Data.Entity;
 
 namespace Dominio.Seedwork
 {
-    class RepositorioDbContext<TEntity> : Dominio.Seedwork.IRepositorio<TEntity> where TEntity : class
+    public class RepositorioDbContext<TEntity> : Dominio.Seedwork.IRepositorio<TEntity> where TEntity : class
     {
 
         protected readonly DbContext m_context;
 
-        RepositorioDbContext()
-        {
+        //public RepositorioDbContext()
+        //{
             
-        }
+        //}
 
         TEntity IRepositorio<TEntity>.Get(string Id)
         {

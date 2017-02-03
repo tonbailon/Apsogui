@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infraestructura.Apsogui
+namespace Infraestructura.Apsogui.Repositorios
 {
     public interface IRepositorioAlumno : Dominio.Seedwork.IRepositorio<Dominio.Apsogui.GestionAlumnos.Alumno>
 

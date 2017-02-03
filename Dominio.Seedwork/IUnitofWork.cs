@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Dominio.Seedwork
 {
-    interface IUnitofWork
-    {
-        void Guardar();
-        void Eliminar();        
+    public interface IUnitOfWork
+    {        
+        void AceptarCambios();
+         
     }
 }

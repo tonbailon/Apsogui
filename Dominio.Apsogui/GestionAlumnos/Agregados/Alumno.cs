@@ -17,9 +17,9 @@ namespace Dominio.Apsogui.GestionAlumnos
         //private string m_TipoIdentificacion = "";
         //private DateTime? m_FechaNacimiento = null;
 
-        public Alumno() {
+        //public Alumno() {
 
-        }
+        //}
 
         public string IdAlumno { get; set; }
         public string Nombre { get; set; }

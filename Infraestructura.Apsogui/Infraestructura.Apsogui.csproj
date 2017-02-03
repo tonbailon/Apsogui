@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRepositorioAlumno.cs" />
+    <Compile Include="Repositorios_DbContext\IRepositorioAlumno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios_DbContext\RepositorioAlumno.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominio.Apsogui\Dominio.Apsogui.csproj">

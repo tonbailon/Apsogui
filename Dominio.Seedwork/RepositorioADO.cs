@@ -8,7 +8,7 @@ namespace Dominio.Seedwork
 {
     class RepositorioADO<TEntity> : Dominio.Seedwork.IRepositorio<TEntity> where TEntity : class
     {
-        protected readonly ADOCONTEXT?? m_context;
+        //protected readonly ADOCONTEXT?? m_context;
 
         public TEntity Get(string Id)
         {

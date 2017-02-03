@@ -8,7 +8,7 @@ namespace Dominio.Seedwork
 {
     class RepositorioNHibernate<TEntity> : Dominio.Seedwork.IRepositorio<TEntity> where TEntity : class
     {
-        protected readonly NHIBERNATECONTEXT?? m_context;
+        //protected readonly NHIBERNATECONTEXT?? m_context;
         
             
         public TEntity Get(string Id)

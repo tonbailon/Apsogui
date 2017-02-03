@@ -20,7 +20,7 @@ namespace Dominio.Seedwork {
         void Add(TEntity item);
         void Remove(TEntity item);
 
-
+     
         //IUnitOfWork UnitOfWork { get; }
 
            

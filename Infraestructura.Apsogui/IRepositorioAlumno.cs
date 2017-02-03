@@ -6,32 +6,10 @@ using System.Threading.Tasks;
 
 namespace Infraestructura.Apsogui
 {
-    public class IRepositorioAlumno : Dominio.Seedwork.IRepositorio<Dominio.Apsogui.GestionAlumnos.Alumno>
+    public interface IRepositorioAlumno : Dominio.Seedwork.IRepositorio<Dominio.Apsogui.GestionAlumnos.Alumno>
 
     {
-        public void Add(Dominio.Apsogui.GestionAlumnos.Alumno item)
-        {
-            throw new NotImplementedException();
-        }
+        void AlumnosLicenciaCaducada(DateTime fechaExamen, int DiasMargenDelante, int DiasMargenDetras);
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Dominio.Apsogui.GestionAlumnos.Alumno Get(string Id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Dominio.Apsogui.GestionAlumnos.Alumno> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(Dominio.Apsogui.GestionAlumnos.Alumno item)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

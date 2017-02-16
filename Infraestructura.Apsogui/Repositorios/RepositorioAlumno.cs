@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 using Dominio.Apsogui.GestionAlumnos;
 using System.Data.Entity;
 
-namespace Infraestructura.Apsogui.Repositorios
+namespace Infraestructura.Data.Apsogui.Repositorios
 {
-    class RepositorioAlumno : Dominio.Seedwork.RepositorioDbContext<Alumno>, IRepositorioAlumno
+    class RepositorioAlumno : Dominio.Seedwork.IRepositorio<Alumno>, Dominio.Apsogui.GestionAlumnos.IRepositorioAlumno
     {
+
+        private Dominio.Seedwork.IUnitOfWork m_UnitOfWork;
+        public RepositorioAlumno(Dominio.Seedwork.IUnitOfWork UnitOfWork) {
+            m_UnitOfWork = UnitOfWork;
+            }
        
         public void Add(Alumno item)
         {

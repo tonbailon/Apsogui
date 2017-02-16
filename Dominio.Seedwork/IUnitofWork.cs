@@ -9,6 +9,7 @@ namespace Dominio.Seedwork
     public interface IUnitOfWork
     {        
         void AceptarCambios();
+        void Rollback();
          
     }
 }

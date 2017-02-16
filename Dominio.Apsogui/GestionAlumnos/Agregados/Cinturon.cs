@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Apsogui.GestionAlumnos
+namespace Dominio.Apsogui.GestionAlumnos.Agregados
 {
-    class Cinturon
+    public class Cinturon
     {
         public Cinturon()
         {

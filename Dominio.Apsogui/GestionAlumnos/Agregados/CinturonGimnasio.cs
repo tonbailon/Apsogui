@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dominio.Apsogui.GestionAlumnos.Agregados
 {
-    class Licencia
+    public class CinturonGimnasio: Cinturon
     {
-        public Licencia()
-        {
-
-        }
-        public string NumeroLicencia { get; set; }
-        public DateTime FechaExpedicion { get; set; }
+        public bool entregadoGimnasio { get; set; }
     }
 }

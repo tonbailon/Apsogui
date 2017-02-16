@@ -4,20 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Apsogui.GestionAlumnos { 
-    class MovimientoAlumno
+namespace Dominio.Apsogui.GestionAlumnos.Agregados { 
+    public class MovimientoAlumno
     {
-        private string m_IdAlumno="";        
-        private int m_TipoMovimiento = 0;
-        private DateTime? m_FechaMovimiento = null;
+        //private string m_IdAlumno="";        
+        private int m_TipoMovimiento;
+        private DateTime? m_FechaMovimiento;
 
-        public MovimientoAlumno(string idAlumno, TipoMovimiento tipoMovimiento, DateTime fechaMovimiento)
+        public MovimientoAlumno(TipoMovimiento tipoMovimiento, DateTime fechaMovimiento)
         {
-            m_IdAlumno = idAlumno;
-            m_TipoMovimiento = (int)tipoMovimiento;
-            m_FechaMovimiento = fechaMovimiento;
+            //m_IdAlumno = idAlumno;
+            this.m_TipoMovimiento = (int)tipoMovimiento;
+            this.m_FechaMovimiento = fechaMovimiento;
         }
 
+        public void setMovimiento(TipoMovimiento tipoMovimiento, DateTime fechaMovimiento)
+        {
+            this.m_TipoMovimiento = (int)tipoMovimiento;
+            this.m_FechaMovimiento = fechaMovimiento;
+        }
         public enum TipoMovimiento {Baja=1,Alta=2}
 
 

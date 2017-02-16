@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestionAlumnos\Agregados\CinturonGimnasio.cs" />
+    <Compile Include="GestionAlumnos\Agregados\IRepositorioAlumno.cs" />
     <Compile Include="GestionAlumnos\Agregados\MovimientoAlumno.cs" />
     <Compile Include="GestionAlumnos\Agregados\Alumno.cs" />
     <Compile Include="GestionAlumnos\Agregados\Cinturon.cs" />
@@ -49,7 +51,12 @@
     <Compile Include="GestionAlumnos\Servicios\IAlumnoServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio.Seedwork\Dominio.Seedwork.csproj">
+      <Project>{6d78e1c8-5dd5-47dc-9cd3-f18921633b08}</Project>
+      <Name>Dominio.Seedwork</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
